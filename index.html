@@ -2,12 +2,68 @@
 <html >
   <head>
     <meta charset="utf-8" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
     <script src="./src/app.js" type="module"></script>
   </head>
   <body>
-    <div class="contact"></div>
-    <div class="comment"></div>
-    <div class="thx"></div>
+   
+    <form method="" action="" class="contact form">
+      <legend class="form__title">
+        Оставить отзыв о посещение кинотеатра
+      </legend>
+
+      <div class="form__container">
+        <label class="form__label" for="phone">Телефон</label>
+        <input class="form__input" name="phone" type="phone" id="phone"/>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="name">Имя</label>
+        <input class="form__input" name="name" type="text" id="name"/>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" name="email" type="email" id="email"/>
+      </div>
+
+      <button class="form__button" type="submit">Начать</button>
+    </form>
+
+
+    <form method="" action="" class="comment form">
+      <legend class="form__title">
+        Оставить отзыв о посещение кинотеатра
+      </legend>
+
+      <div class="form__container">
+        <label class="form__label" for="film">Фильм</label>
+        <input class="form__input" name="film" type="text" id="film"/>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="rating">Оценка</label>
+        <input class="form__input" name="rating" type="text" id="rating"/>
+      </div>
+
+      <div class="form__container form__container--textarea">
+        <label class="form__label" for="comments">Комментарий</label>
+        <textarea class="form__textarea" name="comments" id="comments"></textarea>
+      </div>
+
+      <button class="form__button" type="submit">Отправить</button>
+      <button class="form__button" type="cancel">Назад</button>
+    </form>
+
+    <form method="" action="" class="thx form">
+      <legend class="form__title">
+        Оставить отзыв о посещение кинотеатра
+      </legend>
+
+      <div class="form__message">Спасибо за ваш отзыв !!</div>
+
+      <button class="form__button" type="submit">Завершить</button>
+    </form>
 
     <a href="#/comment">Перейти к коментариям</a>
     <a href="#/">Перейти к контактам</a>
